@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>chat room</title>
+		<link rel="stylesheet" type='text/css' href="style.css" />
+	</head>
+	
+	<body>
+		<div id="sideBar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close&times;</a>
+			<ul id="online"></ul>
+		</div>
+		<span style="font-size:25px;cursor:pointer" onclick="openNav()">Online Users&#9776;</span>
+		
+		<div>
+			<h2 id="header">Welcome!</h2>
+			<ul id="messages"></ul>
+		</div>
+		<form action="">
+			<input id="m" autocomplete="off" /><button>Send</button>
+		</form>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+				integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+				crossorigin="anonymous"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/client.js"></script>
+	</body>
+</html>
